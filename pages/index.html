@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hadi - Intro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="../assets/css/intro.css" rel="stylesheet" />
+  </head>
+
+    <body>
+        <section class="app-shell">
+            <main class="intro-chat-app">
+                <section class="intro-hero">
+                    <div class="container py-5 mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="text-center">
+                                    <img src="../assets/images/intro-logo.png" alt="Hadi Logo" class="hadi-logo" />
+                                </div>
+                                <p class="intro-content text-center mb-4">
+                                    <span class="intro-friend">أنا هادي.. رفيقك في رحلتك لمكة.</span>
+                                    <br />
+                                    <span>أرشدك، أساندك، وأسهل لك كل خطوة</span>
+                                </p>
+                                <div class="text-center mb-4">
+                                    <!-- <button type="button" class="btn hadi-btn btn-lg d-inline-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                        ابدأ المحادثة مع هادي
+                                    </button> -->
+                                    <button type="button" class="btn hadi-btn btn-lg d-inline-flex align-items-center justify-content-center gap-2" onclick="window.location.href='./chat.html'">
+                                        <img src="../assets/images/message-icon.png" alt="Message Icon" />
+                                        <span>ابدأ المحادثة مع هادي</span>
+                                    </button>
+                                </div>
+                                <p class="hint text-center">
+                                    رحلة العمر تبدأ بخطوة... وأنا معك في كل خطوة
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-pattern">
+                        <img src="../assets/images/intro-pattern.png" alt="Intro Pattern" />
+                    </div>
+                </section>
+            </main>
+
+            <!-- Terms popup -->
+            <div class="modal fade terms-modal" id="termsModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center position-relative">
+                            <div class="terms-icon">
+                                <!-- simple warning glyph -->
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 7v6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                                        <circle cx="12" cy="17" r="1.5" fill="#fff"/>
+                                    <path d="M10.3 3.7 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z" stroke="rgba(255,255,255,.0)"/>
+                                </svg>
+                            </div>
+                            <button type="button" class="btn btn-link terms-close" data-bs-dismiss="modal" aria-label="Close">✕</button>
+                        </div>
+
+                        <div class="modal-body pt-3">
+                            <div class="terms-text small">
+                                <p>هادي هو مساعد ذكي يقدّم إرشادات عامة لتسهيل رحلتك، ولا يُعتبر بديلاً عن الاستشارة الشرعية أو الطبية أو التنظيمات الرسمية.</p>
+                                <p>ورغم حرصنا على دقة المعلومات، قد يقدّم هادي أحيانًا إجابات غير مكتملة أو غير مناسبة، لذا تقع مسؤولية التحقق النهائي وأخذ القرار على المستخدم وحده.</p>
+                                <p>جميع المعلومات التي يقدّمها هادي هي لأغراض مساعدة وتوجيه فقط، ولا يتحمّل التطبيق أي مسؤولية عن القرارات أو النتائج الناتجة عن الاعتماد الكامل على هذه المعلومات.</p>
+                                <p>قد يستخدم هادي بياناتك الأساسية (مثل الاسم ورقم الجوال) لتخصيص التجربة وتحسين الخدمة، مع الالتزام بالحفاظ على سريتها وعدم مشاركتها مع أي طرف ثالث.</p>
+                                <p>بالضغط على (استمرار) فأنت تؤكد أنك قرأت وفهمت هذا الإخلاء، وتوافق على الشروط والأحكام وسياسة الخصوصية الخاصة بالتطبيق.</p>
+                            </div>
+
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+                                <label class="form-check-label" for="agreeCheck">
+                                    أوافق على أنني قد قرأت الشروط والأحكام و سياسة الخصوصية
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer border-0">
+                            <button id="agreeBtn" class="btn terms-cta w-100" type="button" disabled>
+                                استمرار
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terms popup -->
+         </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/intro.js"></script>
+    </body>
+</html>

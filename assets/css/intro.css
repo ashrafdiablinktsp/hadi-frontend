@@ -1,0 +1,139 @@
+@import url("./global.css");
+
+.intro-hero {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    align-items: start;
+    color: var(--hadi-text);
+    background-image: url('../images/intro-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-hero .intro-pattern {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 40vh;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.brand-dot {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: inline-grid;
+    place-items: center;
+    background: linear-gradient(180deg, #fde8d8, var(--hadi-white));
+    box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    font-weight: 700;
+    color: var(--hadi-primary);
+}
+
+.title-ar {
+    color: var(--hadi-white);
+    font-weight: 800;
+    font-size: clamp(34px, 8vw, 48px);
+    margin: 0;
+}
+
+.title-en {
+    color: var(--hadi-accent);
+    font-weight: 800;
+    font-size: clamp(28px, 6vw, 40px);
+    margin: 0;
+}
+
+.intro-content {
+    color: var(--hadi-main);
+    line-height: 1.8;
+}
+
+.intro-friend {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hadi-btn {
+    background: var(--hadi-accent);
+    border: 2px solid var(--hadi-accent);
+    color: var(--hadi-white);
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 186px;
+    height: 40px;
+    text-align: center;
+}
+
+.hadi-btn:hover, .hadi-btn:focus {
+    background: var(--hadi-secondary-dark);
+    border-color: var(--hadi-secondary-dark);
+    color: var(--hadi-white);
+}
+
+.hint {
+    color: var(--hadi-main);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal-backdrop.show {
+    opacity: .65;
+}
+
+.terms-modal .modal-content {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--hadi-white);
+}
+
+.terms-modal .modal-body {
+    position: relative;
+    background: radial-gradient(transparent 16px, rgba(15, 18, 20, .02) 17px) 0 0/36px 36px, linear-gradient(var(--hadi-white), var(--hadi-white));
+}
+
+.terms-modal .modal-header {
+    border: 0;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.terms-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--hadi-secondary);
+    color: var(--hadi-white);
+    display: inline-grid;
+    place-items: center;
+    margin-inline: auto;
+}
+
+.terms-close {
+    position: absolute;
+    inset-inline-end: 14px;
+    top: 16px;
+    opacity: .6;
+}
+
+.terms-text {
+    line-height: 1.9;
+    color: #1d2b33;
+}
+
+.terms-cta {
+    background: var(--hadi-muted);
+    border: 0;
+    height: 48px;
+    border-radius: 12px;
+    opacity: .7;
+}
+
+.terms-cta.enabled {
+    background: var(--hadi-accent);
+    color: var(--hadi-white);
+    opacity: 1;
+}

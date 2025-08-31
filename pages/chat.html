@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hadi - Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="../assets/css/chat.css" rel="stylesheet" />
+</head>
+<body>
+
+    <section class="app-shell">
+        <header class="chat-header py-2">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                    <div class="header-avatar">
+                        <img class="img-fluid rounded-circle h-100" src="../assets/images/chat-messager-logo.png" alt="Avatar" />
+                    </div>
+                    <img src="../assets/images/chat-header-hadi-text.png" alt="Avatar" />
+                </div>
+                <button class="btn btn-link text-decoration-none fs-4">
+                    <img src="../assets/images/menu.png" alt="Menu Icon" />
+                </button>
+            </div>
+        </header>
+
+        <!-- Chat body -->
+        <main class="chat-body">
+            <div class="d-flex justify-content-between mb-3">
+                <div class="hadi-avatar">
+                    <img class="img-fluid rounded-circle h-100" src="../assets/images/chat-messager-logo.png" alt="Avatar" />
+                </div>
+                <div class="bubble ai">
+                    يسعدني جدًا أن أكون رفيقك الذكي—جاهز لاستكشاف الأفكار، والإجابة عن الأسئلة،
+                    ومساعدتك في التعامل مع أي شيء يشغل بالك...
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-3">
+                <div class="bubble user">
+                    سأذهب للحج هذا العام إن شاء الله، هل يمكنك شرح الخطوات الرئيسية؟
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="hadi-avatar">
+                    <img class="img-fluid rounded-circle h-100" src="../assets/images/chat-messager-logo.png" alt="Hadi" />
+                </div>
+                <div class="bubble ai">
+                    ما شاء الله! تقبل الله حجك وأعانك عليه. إليك خطوات الحج بشكل مبسط:
+                    <ul class="mt-2">
+                        <li><b>الإحرام</b> - الدخول في النية واللباس الخاص بالحج.</li>
+                        <li><b>الطواف</b> - الطواف حول الكعبة سبع مرات.</li>
+                        <li><b>السعي</b> - المشي بين الصفا والمروة.</li>
+                        <li><b>المبيت في منى</b> - قضاء الليلة في الدعاء والذكر.</li>
+                        <li><b>الوقوف بعرفة</b> - أهم ركن في الحج، من الظهر حتى المغرب.</li>
+                        <li><b>المبيت في مزدلفة</b> - جمع الحصى والمبيت تحت السماء.</li>
+                        <li><b>رمي الجمرات</b> - رمي جمرة العقبة ثم الجمرات الثلاث.</li>
+                        <li><b>الذبح (الهدي)</b> - تقديم الأضحية.</li>
+                        <li><b>طواف الإفاضة</b> - طواف آخر حول الكعبة.</li>
+                        <li><b>طواف الوداع</b> - الطواف الأخير قبل مغادرة مكة.</li>
+                    </ul>
+                    <div class="mt-2">هل ترغب في شرح مفصل لكل خطوة؟</div>
+                </div>
+            </div>
+            <div class="day-divider my-3"><span>اليوم</span></div>
+            <div class="d-flex justify-content-end mb-3">
+                <div class="bubble user">
+                    أنا أستعد للحج. ماذا يجب أن أحمل معي وكيف أنظم أموري؟
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="hadi-avatar">
+                    <img class="img-fluid rounded-circle h-100" src="../assets/images/chat-messager-logo.png" alt="Hadi" />
+                </div>
+                <div class="bubble ai">
+                    سؤال ممتاز! إليك قائمة سريعة تساعدك في التحضير:
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center gap-3 mb-3" id="typingRow">
+                <div class="hadi-avatar">
+                    <img class="img-fluid rounded-circle h-100" src="../assets/images/chat-messager-logo.png" alt="Hadi" />
+                </div>
+
+                <div class="bubble ai typing" role="status" aria-live="polite">
+                    <span class="dot">
+                        <img src="../assets/images/dot-1.png" alt="Hadi" />
+                    </span>
+                    <span class="dot">
+                        <img src="../assets/images/dot-2.png" alt="Hadi" />
+                    </span>
+                    <span class="dot">
+                        <img src="../assets/images/dot-3.png" alt="Hadi" />
+                    </span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Composer -->
+        <footer class="composer">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+                <input id="messageInput" class="form-control" placeholder="اكتب سؤالك .. وهادي معك" />
+                <button id="sendBtn" class="btn btn-send d-flex justify-content-center align-items-center" disabled>
+                    <img src="../assets/images/send.png" alt="Send" />
+                </button>
+            </div>
+            <div class="d-flex justify-content-center quota-line mt-2">
+                <div class="quota-line-text">ليس لديك رسائل متاحة، لإرسال المزيد <a href="#">سجل الدخول</a></div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/chat.js"></script>
+</body>
+</html>
